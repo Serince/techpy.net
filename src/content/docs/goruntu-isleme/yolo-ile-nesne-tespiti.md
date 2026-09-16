@@ -11,6 +11,6 @@ tarih: "2022-12-22"
 kapak: "/kapaklar/yolo-ile-nesne-tespiti.jpg"
 durum: video
 ---
-Şimdi Yolo model kullanarak nesne takibi yapacağız. Bu model bir çok öğeyi tanımak için önceden eğitilmiş ve optimize edilmiş bir model. OpenCV ile okuduğumuz videodaki görüntü karelerini
+Hazır eğitilmiş Yolo modeliyle videodaki nesneleri tanıyıp takip eden uygulamayı adım adım kuruyoruz. Bu videoda önceden eğitilmiş ve optimize edilmiş Yolo modelini OpenCV ile okuduğumuz görüntü karelerine soruyor, modelin tanıdığı nesneleri kare üzerinde işaretliyoruz. Nesne takibine pratik bir giriş yapmak isteyenler için birebir.
 
-> 🎬 Bu dersin anlatım videosu yukarıdadır. (video + kod) arşiv engeli nedeniyle henüz eklenemedi. Özgün adres: https://techpy.net/tr/2022/12/22/yolo-ile-nesne-tespiti/ — Telegram duyurusu: https://t.me/techpy_net/49
+**Kaynaklar:** [Özgün yazı](https://techpy.net/tr/2022/12/22/yolo-ile-nesne-tespiti/) • [Telegram duyurusu](https://t.me/techpy_net/49)

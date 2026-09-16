@@ -51,3 +51,5 @@
 .egitmen small { color: #ffb034; }
 /* kod blokları vurgusu */
 .expressive-code { --ec-brdCol: #ffb03455; }
+.ekip-btn{display:inline-block;background:#131a2b;color:#ffb034 !important;font-weight:800;padding:.65rem 1.3rem;border-radius:.8rem;border:2px solid #ffb034;text-decoration:none}
+.ekip-btn:hover{background:#ffb034;color:#131a2b !important;text-decoration:none}

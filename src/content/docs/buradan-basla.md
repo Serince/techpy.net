@@ -10,4 +10,4 @@ Python bilmiyorsan sırayla ilerle:
 3. **[Veri Hazırlama](/veri-hazirlama/python-ile-websitesinden-veri-cekme/)** — webden ve belgeden veri çekme (5 ders, videolu).
 4. İlgine göre devam et: **İstatistik**, **Görüntü İşleme**, **Makine Öğrenmesi** veya **Sembolik Programlama**.
 
-📣 işaretli dersler Telegram özetidir; tam metinleri yakında eklenecek. Duyurular: [t.me/techpy_net](https://t.me/techpy_net).
+📣 işaretli dersler video anlatımlı kısa derslerdir. Duyurular: [t.me/techpy_net](https://t.me/techpy_net).

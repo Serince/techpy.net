@@ -12,6 +12,7 @@ const yazarLink = data?.yazarKanal ? `<a href="${data.yazarKanal}" target="_blan
     {data?.kapak && <img class="ders-kapak" src={data.kapak} alt={data?.title ?? 'ders kapağı'} loading="lazy" />}
     <div class="ders-band">
       {data?.durum === 'ozet' && <span class="ozet">📣 TELEGRAM ÖZETİ — tam metin yakında</span>}
+      {data?.durum === 'video' && <span class="ozet">🎬 VİDEO DERS</span>}
       {data?.yazar && <span>✍️ <span set:html={yazarLink} /></span>}
       {data?.yazilim && <span>🐍 {data.yazilim}</span>}
       {data?.tarih && <span>📅 {data.tarih}</span>}

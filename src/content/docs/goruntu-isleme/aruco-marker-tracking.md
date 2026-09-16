@@ -3,12 +3,14 @@ title: "ArUco Marker Tracking"
 description: "AruCo işaretçileri, kameralar tarafından kolayca algılanabilen ve konumları ile yönleri belirlenebilen özel 2D barkodlara benzer. Bu işaretçiler genellikle robot lokalizasyonu, artırılmış gerçeklik"
 sidebar:
   order: 6
+youtube: Bq_D25TOXv8
 yazar: "Al Kautsar Ahmaddipo Narendra"
+yazarKanal: "https://www.youtube.com/@alkautsarank"
 yazilim: "Python + OpenCV"
 tarih: "2025-07-09"
 kapak: "/kapaklar/aruco-marker-tracking.jpg"
-durum: ozet
+durum: video
 ---
-AruCo işaretçileri, kameralar tarafından kolayca algılanabilen ve konumları ile yönleri belirlenebilen özel 2D barkodlara benzer. Bu işaretçiler genellikle robot lokalizasyonu, artırılmış gerçeklik
+ArUco işaretçilerin konum, yön ve hızını gerçek zamanlı takip eden uygulamayı kuruyoruz. Bu videoda robot lokalizasyonu ve artırılmış gerçeklikte kullanılan bu özel 2B barkodların kamera kalibrasyonuyla birlikte nasıl izlendiğini görüyoruz.
 
-> ⏳ Bu dersin tam içeriği (video + kod) arşiv engeli nedeniyle henüz eklenemedi. Özgün adres: https://techpy.net/2025/07/09/aruco-marker-tracking/ — Telegram duyurusu: https://t.me/techpy_net/65
+**Kaynaklar:** [Özgün yazı](https://techpy.net/2025/07/09/aruco-marker-tracking/) • [Telegram duyurusu](https://t.me/techpy_net/65)

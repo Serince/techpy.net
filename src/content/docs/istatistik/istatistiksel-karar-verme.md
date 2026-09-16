@@ -11,6 +11,6 @@ tarih: "2023-07-03"
 kapak: "/kapaklar/istatistiksel-karar-verme.jpg"
 durum: video
 ---
-Veriler analiz edilerken, girdilerin çıktıları etkime oranı karar vermede oldukça önemlidir. Bu videoda Anova testi ile girdi ve çıktıların tutarlılığı kontrol edilmiş sonrasında Pearson’s R
+Girdilerin çıktıyı ne kadar etkilediğini Anova testi ve Pearson's R ile ölçüyoruz. Bu videoda önce Anova testiyle girdi ve çıktıların tutarlılığı kontrol ediliyor, sonra Pearson's R ile etkinin büyüklüğü belirleniyor. Veriye bakıp karar vermek isteyenlerin temel videosu.
 
-> 🎬 Bu dersin anlatım videosu yukarıdadır. (video + kod) arşiv engeli nedeniyle henüz eklenemedi. Özgün adres: https://techpy.net/tr/2023/07/03/istatistiksel-karar-verme/ — Telegram duyurusu: https://t.me/techpy_net/56
+**Kaynaklar:** [Özgün yazı](https://techpy.net/tr/2023/07/03/istatistiksel-karar-verme/) • [Telegram duyurusu](https://t.me/techpy_net/56)

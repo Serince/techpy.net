@@ -3,12 +3,14 @@ title: "Monte Carlo Analizi"
 description: "Monte Carlo Analizi, belirsizlik içeren problemleri binlerce kez tekrarlayarak olasılıkları ortaya koyan istatistiksel bir simülasyon yöntemidir. Bu videoda, Python ile İstanbul-Rotterdam gemi seferi "
 sidebar:
   order: 7
+youtube: BOB49qgr8g8
 yazar: "Hüseyin Atillahan Bektaş"
+yazarKanal: "https://www.youtube.com/@Atl-r8j"
 yazilim: "Python + pandas"
 tarih: "2025-07-11"
 kapak: "/kapaklar/monte-carlo-analizi.jpg"
-durum: ozet
+durum: video
 ---
-Monte Carlo Analizi, belirsizlik içeren problemleri binlerce kez tekrarlayarak olasılıkları ortaya koyan istatistiksel bir simülasyon yöntemidir. Bu videoda, Python ile İstanbul-Rotterdam gemi seferi süresi
+Belirsizliği binlerce tekrarla olasılığa çeviren Monte Carlo simülasyonunu Python ile yapıyoruz. Bu videoda İstanbul-Rotterdam gemi sefer süresi örneği üzerinden istatistiksel simülasyon mantığını uygulamalı görüyoruz.
 
-> ⏳ Bu dersin tam içeriği (video + kod) arşiv engeli nedeniyle henüz eklenemedi. Özgün adres: https://techpy.net/2025/07/11/monte-carlo-analizi/ — Telegram duyurusu: https://t.me/techpy_net/69
+**Kaynaklar:** [Özgün yazı](https://techpy.net/2025/07/11/monte-carlo-analizi/) • [Telegram duyurusu](https://t.me/techpy_net/69)

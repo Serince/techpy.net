@@ -14,7 +14,7 @@ export const collections = {
         yazilim: z.string().optional(),
         tarih: z.string().optional(),
         kapak: z.string().optional(),
-        durum: z.enum(['tam', 'ozet']).optional(),
+        durum: z.enum(['tam', 'ozet', 'video']).optional(),
         dogrulama: z.boolean().optional(),
       }),
     }),

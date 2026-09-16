@@ -3,12 +3,14 @@ title: "FFT Analizi"
 description: "Bu video, Fourier Dönüşümü (FFT) adı verilen güçlü bir analitik aracı tanıtmaktadır. Karmaşık sinyallerin aslında hangi basit alt sinyallerden oluştuğunu görmemize yarayan bu işlem,"
 sidebar:
   order: 8
+youtube: OcS5kXsLW6A
 yazar: "Çağatay Özbudak"
+yazarKanal: "https://www.youtube.com/@cagatayozbudak6106"
 yazilim: "Python + pandas"
 tarih: "2025-08-04"
 kapak: "/kapaklar/fft-analizi.jpg"
-durum: ozet
+durum: video
 ---
-Bu video, Fourier Dönüşümü (FFT) adı verilen güçlü bir analitik aracı tanıtmaktadır. Karmaşık sinyallerin aslında hangi basit alt sinyallerden oluştuğunu görmemize yarayan bu işlem,
+Karmaşık sinyallerin içindeki basit bileşenleri Fourier Dönüşümüyle ortaya çıkarıyoruz. Bu videoda güçlü analitik araç FFT'yi tanıyıp bir sinyalin hangi alt sinyallerden oluştuğunu görselleştiriyoruz.
 
-> ⏳ Bu dersin tam içeriği (video + kod) arşiv engeli nedeniyle henüz eklenemedi. Özgün adres: https://techpy.net/2025/08/04/fft-analizi/ — Telegram duyurusu: https://t.me/techpy_net/72
+**Kaynaklar:** [Özgün yazı](https://techpy.net/2025/08/04/fft-analizi/) • [Telegram duyurusu](https://t.me/techpy_net/72)
