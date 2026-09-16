@@ -1,33 +1,21 @@
-# techpy — Teknik Python (Astro 5 + Starlight)
+# techpy — Teknik Python
 
-Çöken WordPress sitesinin yerine sıfırdan kurulan statik eğitim sitesi.
-Tema renkleri techpy logosundan: lacivert `#131A2B`, teknoloji mavisi `#2F7CBF`, logo sarısı `#FFB034`.
+*Fikir uçar, kod kalır!*
 
-## İçerik
+**techpy**, mühendislik problemlerini Python ile çözen Türkçe bir öğrenme sitesidir. Dersler; sayısal yöntemden görüntü işlemeye, veri hazırlamadan makine öğrenmesine kadar mühendislikte gerçekten işe yarayan konuları sade bir dille, bol kodla ve videolu anlatımlarla öğretir.
 
-- 47 ders (`src/content/docs/<kurs>/<slug>.md`): 25 tam metin + 22 Telegram özeti
-- 7 kurs: temeller, sayisal-yontem, istatistik, sembolik-programlama, goruntu-isleme, makine-ogrenmesi, veri-hazirlama
-- Frontmatter: title, description, sidebar.order, youtube, yazar, yazarKanal, yazilim, tarih, kapak, durum
-- 58 satır `public/_redirects` (eski tarihli URL → yeni adres, 301)
-- `public/admin.html`: siteden ders ekleme paneli (GitHub Contents API, token localStorage'da)
-- `.pages.yml`: Pages CMS yapılandırması
+## Neden var?
 
-## Kurulum
+Mühendislikte çoğu hesap, analiz ve simülasyon artık Python ile yapılıyor; ama Türkçe, uygulamaya dönük ve dağınık olmayan bir kaynak bulmak zordu. techpy bu boşluğu doldurmak için kuruldu: her ders tek bir probleme odaklanır, kodu verir, videosunu gösterir.
 
-```bash
-cd techpy-astro
-npm install
-npx astro build   # hatasız bitmeli -> dist/
-```
+## İçinde ne var?
 
-## Yayınlama (ücretsiz)
+- **47 ders, 7 kurs:** Python Temelleri, Sayısal Yöntem, İstatistik ve Veri Analizi, Sembolik Programlama, Görüntü İşleme, Makine Öğrenmesi, Veri Hazırlama
+- **Videolu dersler:** YouTube anlatımlarıyla desteklenen uygulamalar
+- **Ekip:** Dr. Serdar Turgut İnce (Kurucu • Başyazar), Dr. Ümit Güneş (Teknik Destek ve Tasarım), Dr. Ahmet Yurtseven, Dr. Mustafa Taşkın ve Ferdi Çakıcı (Eğitmenler) ile 20'den fazla ders hazırlayan gönüllü eğitmenler
 
-1. **GitHub'a gönder (GitHub Desktop):** klasörü aç → repo oluştur (`Serince/techpy.net`) → Commit → Push. `node_modules/` ve `dist/` gönderilmez (`.gitignore` içinde).
-2. **Cloudflare Pages:** Workers & Pages → Create → Pages → Connect to Git → repo seç → preset **Astro** (build: `npm run build`, output: `dist`) → env `NODE_VERSION=20` → Deploy.
-3. **Domain:** Pages projesinde Custom domains → `techpy.net` ekle → alan adı panelinde nameserver'ları Cloudflare'e çevir. `public/_redirects` eski linkleri otomatik taşır.
+## Hikâyesi
 
-## Kurtarma notları
+techpy.net bir dönem hosting sorunuyla kapandı; site, arşiv kayıtları ve Telegram duyurularından tek tek kurtarılıp logonun renkleriyle (lacivert, teknoloji mavisi, logo sarısı) yeniden kuruldu. Eski adresler yeni sayfalara yönlenir, hiçbir ders kaybolmaz.
 
-- Kaynaklar: `techpy_TAM_kurtarma.zip` (Wayback aynası), Telegram `t.me/techpy_net` (49 mesaj → 47 URL envanteri).
-- Sunucu IP'si archive.org'dan 429 yediği için CDX yoklaması kullanıcı tarayıcısından yapıldı; 2025 yazıları origin-403'lü, Telegram özeti olarak eklendi.
-- Fotoğraflar: şeffaf PNG → beyaza flat + JPEG (ekip 400px, kapak 800px).
+Duyurular ve yeni dersler: [t.me/techpy_net](https://t.me/techpy_net)
