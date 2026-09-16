@@ -1,0 +1,9 @@
+{
+  "temeller": {"baslik": "Python Temelleri", "seviye": "Başlangıç", "aciklama": "Kıyaslama, döngüler, fonksiyonlar, listeler ve ilk grafikler.", "yazilim": "Python", "kapak": "/kapaklar/kurs-temeller.jpg"},
+  "sayisal-yontem": {"baslik": "Sayısal Yöntem", "seviye": "Orta", "aciklama": "Yarılama, Newton-Raphson ve ODE sayısal çözümleri.", "yazilim": "Python + NumPy", "kapak": "/kapaklar/kurs-sayisal.jpg"},
+  "istatistik": {"baslik": "İstatistik ve Veri Analizi", "seviye": "Orta", "aciklama": "Karar verme testleri, korelasyon, deney tasarımı, Monte Carlo ve frekans analizi.", "yazilim": "Python + pandas", "kapak": "/kapaklar/kurs-istatistik.jpg"},
+  "sembolik-programlama": {"baslik": "Sembolik Programlama", "seviye": "Orta", "aciklama": "SymPy ile kiriş çözümü ve kütle-yay hareket denklemleri.", "yazilim": "Python + SymPy", "kapak": "/kapaklar/kurs-sembolik.jpg"},
+  "goruntu-isleme": {"baslik": "Görüntü İşleme", "seviye": "Orta-İleri", "aciklama": "OpenCV kurulumu, yüz algılama, YOLO/SSD takibi, ArUco ve kamera kalibrasyonu.", "yazilim": "Python + OpenCV", "kapak": "/kapaklar/kurs-goruntu.jpg"},
+  "makine-ogrenmesi": {"baslik": "Makine Öğrenmesi", "seviye": "İleri", "aciklama": "Kira tahmini, veri temizleme, model kıyaslama ve özellik etkisi.", "yazilim": "Python + scikit-learn", "kapak": "/kapaklar/kurs-ml.jpg"},
+  "veri-hazirlama": {"baslik": "Veri Hazırlama", "seviye": "Orta", "aciklama": "Webden, tablodan, Selenium ile ve metin belgesinden veri çekme ve birleştirme.", "yazilim": "Python + pandas", "kapak": "/kapaklar/kurs-veri.jpg"}
+}

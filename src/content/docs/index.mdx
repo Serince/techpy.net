@@ -1,0 +1,40 @@
+---
+title: 'techpy — Teknik Python'
+description: 'Mühendislik problemlerini Python ile çözen Türkçe eğitim sitesi. Fikir uçar, kod kalır!'
+template: splash
+hero:
+  title: 'Teknik Python öğren, dene, paylaş.'
+  tagline: Fikir uçar, kod kalır! Mühendislik problemlerini Python ile çözen 47 Türkçe ders.
+  image:
+    file: ../../assets/logo.png
+  actions:
+    - text: Derslere Başla
+      link: /buradan-basla/
+      icon: right-arrow
+      variant: primary
+    - text: Kurs Kataloğu
+      link: '#katalog'
+      icon: open-book
+      variant: secondary
+---
+
+import KursKatalogu from '../../components/KursKatalogu.astro';
+import Egitmenler from '../../components/Egitmenler.astro';
+
+<div class="istatistik not-content">
+  <span><b>47</b> ders</span>
+  <span><b>7</b> kurs</span>
+  <span><b>6</b> YouTube videosu</span>
+  <span><b>21</b> eğitmen</span>
+  <span><b>%100</b> ücretsiz</span>
+</div>
+
+<div id="katalog"></div>
+
+## Kurs Kataloğu
+
+<KursKatalogu />
+
+## Eğitmenler
+
+<Egitmenler />

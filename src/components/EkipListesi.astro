@@ -1,0 +1,13 @@
+---
+import ekip from '../data/ekip.json';
+---
+<div class="egitmen-grid not-content">
+  {ekip.map((e: any) => (
+    <div class="egitmen">
+      {e.foto && <img src={e.foto} alt={e.ad} loading="lazy" />}
+      <b>{e.ad}</b>
+      <small>{e.rol}{e.dersSayisi ? ` • ${e.dersSayisi} ders` : ''}</small>
+      <div style="font-size:.8rem">{e.kanal && <a href={e.kanal} target="_blank" rel="noopener">YouTube</a>}</div>
+    </div>
+  ))}
+</div>

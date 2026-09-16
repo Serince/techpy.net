@@ -1,0 +1,11 @@
+---
+import kurslar from '../data/kurslar.json';
+---
+<div class="kurs-grid not-content">
+  {kurslar.map((k: any) => (
+    <a class="kurs-kart" href={k.href}>
+      <img src={k.kapak} alt={k.baslik} loading="lazy" />
+      <div class="kb"><small>{k.seviye} • {k.dersSayisi} ders</small><br /><b>{k.baslik}</b><p>{k.aciklama}</p></div>
+    </a>
+  ))}
+</div>

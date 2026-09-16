@@ -1,0 +1,23 @@
+---
+import Default from '@astrojs/starlight/components/MarkdownContent.astro';
+import YouTube from './YouTube.astro';
+const route = (Astro.locals as any)?.starlightRoute;
+const data: any = route?.entry?.data ?? {};
+const vids: string[] = Array.isArray(data?.youtube) ? data.youtube : data?.youtube ? [data.youtube] : [];
+const showBand = Boolean(data?.yazar || data?.yazilim || vids.length || data?.durum === 'ozet');
+const yazarLink = data?.yazarKanal ? `<a href="${data.yazarKanal}" target="_blank" rel="noopener">${data.yazar}</a>` : (data?.yazar ?? '');
+---
+{showBand && (
+  <div class="not-content">
+    {data?.kapak && <img class="ders-kapak" src={data.kapak} alt={data?.title ?? 'ders kapağı'} loading="lazy" />}
+    <div class="ders-band">
+      {data?.durum === 'ozet' && <span class="ozet">📣 TELEGRAM ÖZETİ — tam metin yakında</span>}
+      {data?.yazar && <span>✍️ <span set:html={yazarLink} /></span>}
+      {data?.yazilim && <span>🐍 {data.yazilim}</span>}
+      {data?.tarih && <span>📅 {data.tarih}</span>}
+    </div>
+    {vids.map((id) => <YouTube id={id} />)}
+    {data?.dogrulama && <blockquote>⚠️ Bu dersteki video eşleşmesi otomatik bulundu; doğrulama bekliyor.</blockquote>}
+  </div>
+)}
+<Default><slot /></Default>

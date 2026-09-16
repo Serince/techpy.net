@@ -1,0 +1,77 @@
+<!doctype html><html lang="tr"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>techpy Ders Ekle</title>
+<style>
+:root{--navy:#131a2b;--blue:#2f7cbf;--amber:#ffb034}
+body{font:15px/1.6 system-ui,sans-serif;background:#f6f8fc;color:#232c3d;margin:0}
+.wrap{max-width:760px;margin:2rem auto;padding:0 1rem}
+header{background:var(--navy);color:#fff;padding:1rem;border-bottom:4px solid var(--amber)}
+header b{color:var(--amber)}
+.card{background:#fff;border:1px solid #e3e9f4;border-radius:14px;padding:1.2rem;margin:1rem 0}
+label{display:block;font-weight:700;margin:.7rem 0 .2rem}
+input,select,textarea{width:100%;padding:.6rem;border:1px solid #c9d3e6;border-radius:10px;font:inherit}
+textarea{min-height:180px;font-family:ui-monospace,monospace}
+button{background:var(--amber);border:0;border-radius:10px;padding:.7rem 1.4rem;font-weight:800;cursor:pointer}
+.log{white-space:pre-wrap;background:#101828;color:#ffe1a8;border-radius:10px;padding:.8rem;margin-top:1rem}
+</style></head><body>
+<header><div class="wrap"><b>techpy</b> — Ders Ekleme Paneli (GitHub Contents API, token sadece bu tarayıcıda)</div></div></header>
+<div class="wrap">
+<div class="card"><h3>1) GitHub ayarı</h3>
+<label>Repo (Kullanıcı/repo)</label><input id="repo" value="KULLANICI/techpy.net">
+<label>Branch</label><input id="branch" value="main">
+<label>Token (Contents: yazma yetkili, localStorage'da saklanır)</label><input id="token" type="password" placeholder="ghp_...">
+<button onclick="save()">Kaydet</button></div>
+<div class="card"><h3>2) Ders</h3>
+<label>Kurs (yazılım otomatik gelir)</label><select id="kurs" onchange="document.getElementById('yazilim').value=YAZ[this.value]"><option value="temeller">Python Temelleri (Python)</option><option value="sayisal-yontem">Sayısal Yöntem (Python + NumPy)</option><option value="istatistik">İstatistik ve Veri Analizi (Python + pandas)</option><option value="sembolik-programlama">Sembolik Programlama (Python + SymPy)</option><option value="goruntu-isleme">Görüntü İşleme (Python + OpenCV)</option><option value="makine-ogrenmesi">Makine Öğrenmesi (Python + scikit-learn)</option><option value="veri-hazirlama">Veri Hazırlama (Python + pandas)</option></select>
+<label>Slug (dosya adı, örn: yeni-ders)</label><input id="slug" placeholder="yeni-ders">
+<label>Başlık</label><input id="title">
+<label>Açıklama</label><input id="desc">
+<label>YouTube ID (varsa, çokluysa virgülle)</label><input id="yt" placeholder="dQw4w9WgXcQ">
+<label>Yazar</label><input id="yazar">
+<label>Yazar kanalı</label><input id="yazarKanal" placeholder="https://www.youtube.com/@...">
+<label>Yazılım</label><input id="yazilim">
+<label>Tarih</label><input id="tarih" type="date">
+<label>Kapak fotoğrafı (opsiyonel, public/kapaklar'a yüklenir)</label><input id="kapak" type="file" accept="image/*">
+<label>İçerik (Markdown)</label><textarea id="body"></textarea>
+<button onclick="publish()">GitHub'a Gönder</button>
+<div class="log" id="log">Hazır.</div></div>
+<p>Yeni kurs klasörü sidebar'a (<code>astro.config.mjs</code>) elle eklenmelidir — panel bunu yapmaz, uyarır.</p>
+</div>
+<script>
+const YAZ = {"temeller": "Python", "sayisal-yontem": "Python + NumPy", "istatistik": "Python + pandas", "sembolik-programlama": "Python + SymPy", "goruntu-isleme": "Python + OpenCV", "makine-ogrenmesi": "Python + scikit-learn", "veri-hazirlama": "Python + pandas"};
+const $ = id => document.getElementById(id);
+(function(){ const s=JSON.parse(localStorage.getItem('techpy-admin')||'{}'); $('repo').value=s.repo||$('repo').value; $('branch').value=s.branch||'main'; $('token').value=s.token||''; })();
+document.getElementById('kurs').dispatchEvent(new Event('change'));
+function save(){ localStorage.setItem('techpy-admin', JSON.stringify({repo:$('repo').value,branch:$('branch').value,token:$('token').value})); log('Ayarlar tarayıcıya kaydedildi.'); }
+function log(m){ $('log').textContent += '\n'+m; }
+const enc = s => btoa(unescape(encodeURIComponent(s)));
+async function gh(path, body, method='PUT'){
+  const [repo,branch,token]=[$('repo').value,$('branch').value,$('token').value];
+  const url=`https://api.github.com/repos/${repo}/contents/${path}`;
+  let sha=null;
+  try{ const r=await fetch(url+`?ref=${branch}`,{headers:{Authorization:`Bearer ${token}`}}); if(r.ok) sha=(await r.json()).sha; }catch(e){}
+  const res=await fetch(url,{method,headers:{Authorization:`Bearer ${token}`,'Content-Type':'application/json'},body:JSON.stringify(Object.assign({message:`ders: ${path}`,branch},body,sha?{sha}:{}))});
+  if(!res.ok) throw new Error(await res.text());
+  return res.json();
+}
+async function publish(){
+  try{
+    const kurs=$('kurs').value, slug=$('slug').value.trim(), title=$('title').value.trim();
+    if(!slug||!title) return log('Slug ve başlık zorunlu.');
+    let kapak='';
+    const f=$('kapak').files[0];
+    if(f){ const buf=await f.arrayBuffer(); let bin=''; const b=new Uint8Array(buf); for(let i=0;i<b.length;i++) bin+=String.fromCharCode(b[i]);
+      await gh(`public/kapaklar/${slug}-kapak.jpg`,{content:btoa(bin)}); kapak=`/kapaklar/${slug}-kapak.jpg`; log('Kapak yüklendi.'); }
+    const yt=$('yt').value.split(',').map(s=>s.trim()).filter(Boolean);
+    const fm=['---',`title: "${title}"`,`description: "${$('desc').value}"`,'sidebar:','  order: 99'];
+    if(yt.length===1) fm.push(`youtube: ${yt[0]}`); else if(yt.length>1){ fm.push('youtube:'); yt.forEach(v=>fm.push(`  - ${v}`)); }
+    if($('yazar').value) fm.push(`yazar: "${$('yazar').value}"`);
+    if($('yazarKanal').value) fm.push(`yazarKanal: "${$('yazarKanal').value}"`);
+    if($('yazilim').value) fm.push(`yazilim: "${$('yazilim').value}"`);
+    if($('tarih').value) fm.push(`tarih: "${$('tarih').value}"`);
+    if(kapak) fm.push(`kapak: "${kapak}"`);
+    fm.push('durum: tam','---','');
+    await gh(`src/content/docs/${kurs}/${slug}.md`,{content:enc(fm.join('\n')+$('body').value)});
+    log('Yayınlandı! Cloudflare Pages birkaç dakikaya derler.');
+  }catch(e){ log('HATA: '+e.message); }
+}
+</script></body></html>

@@ -1,0 +1,20 @@
+content:
+  - name: dersler
+    label: Dersler
+    path: src/content/docs
+    type: collection
+    view:
+      fields: [title, yazar, yazilim, tarih]
+    fields:
+      - { name: title, label: Başlık }
+      - { name: description, label: Açıklama, type: text }
+      - { name: youtube, label: YouTube ID(ler), hint: 'Tek ID ya da virgüllü liste' }
+      - { name: yazar, label: Yazar }
+      - { name: yazarKanal, label: Yazar YouTube kanalı }
+      - { name: yazilim, label: Yazılım }
+      - { name: tarih, label: Tarih (YYYY-AA-GG) }
+      - { name: kapak, label: Kapak (/kapaklar/....jpg) }
+      - { name: body, label: İçerik, type: markdown }
+media:
+  input: public/kapaklar
+  output: /kapaklar

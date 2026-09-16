@@ -1,0 +1,6 @@
+---
+interface Props { id: string; title?: string }
+const { id, title = 'techpy anlatım videosu' } = Astro.props;
+---
+<div class="video"><iframe src={`https://www.youtube-nocookie.com/embed/${id}?rel=0`} title={title} allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe></div>
+<p class="video-cap">🎬 <a href={`https://www.youtube.com/watch?v=${id}`} target="_blank" rel="noopener">YouTube'da aç</a></p>

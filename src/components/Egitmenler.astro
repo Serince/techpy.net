@@ -1,0 +1,14 @@
+---
+import ekip from '../data/ekip.json';
+const havuz = [...ekip].sort(() => 0.5 - Math.random()).slice(0, 8);
+---
+<div class="egitmen-grid not-content">
+  {havuz.map((e: any) => (
+    <div class="egitmen">
+      {e.foto && <img src={e.foto} alt={e.ad} loading="lazy" />}
+      <b>{e.ad}</b>
+      <small>{e.dersSayisi ? `${e.dersSayisi} ders` : e.rol}</small>
+    </div>
+  ))}
+</div>
+<p><a href="/hakkimizda/">Tüm ekip →</a></p>
