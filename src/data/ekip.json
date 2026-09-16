@@ -1,37 +1,37 @@
 [
-  {
-    "ad": "Dr. Serdar Turgut İnce",
-    "rol": "Kurucu • Başyazar",
-    "foto": "/ekip/serdar-ince.jpg",
-    "kanal": "",
-    "dersSayisi": 21
-  },
-  {
-    "ad": "Dr. Ümit Güneş",
-    "rol": "Teknik Destek ve Tasarım",
-    "foto": "/ekip/umit-gunes.jpg",
-    "kanal": "",
-    "dersSayisi": 0
-  },
-  {
-    "ad": "Dr. Ahmet Yurtseven",
-    "rol": "Eğitmen",
-    "foto": "/ekip/ahmet-yurtseven.jpg",
-    "kanal": "",
-    "dersSayisi": 0
-  },
-  {
-    "ad": "Dr. Mustafa Taşkın",
-    "rol": "Eğitmen",
-    "foto": "/ekip/mustafa-taskin.jpg",
-    "kanal": "",
-    "dersSayisi": 0
-  },
-  {
-    "ad": "Ferdi Çakıcı",
-    "rol": "Eğitmen",
-    "foto": "/ekip/ferdi-cakici.jpg",
-    "kanal": "",
-    "dersSayisi": 1
-  }
+ {
+  "ad": "Dr. Serdar Turgut İnce",
+  "rol": "Kurucu • Başyazar",
+  "foto": "/ekip/serdar-ince.jpg",
+  "kanal": "",
+  "dersSayisi": 21
+ },
+ {
+  "ad": "Dr. Ümit Güneş",
+  "rol": "Teknik Destek ve Tasarım",
+  "foto": "/ekip/umit-gunes.jpg",
+  "kanal": "",
+  "dersSayisi": 0
+ },
+ {
+  "ad": "Dr. Ahmet Yurtseven",
+  "rol": "Eğitmen",
+  "foto": "/ekip/ahmet-yurtseven.jpg",
+  "kanal": "",
+  "dersSayisi": 0
+ },
+ {
+  "ad": "Dr. Mustafa Taşkın",
+  "rol": "Eğitmen",
+  "foto": "/ekip/mustafa-taskin.jpg",
+  "kanal": "",
+  "dersSayisi": 0
+ },
+ {
+  "ad": "Ferdi Çakıcı",
+  "rol": "Eğitmen",
+  "foto": "/ekip/ferdi-cakici.jpg",
+  "kanal": "",
+  "dersSayisi": 1
+ }
 ]
