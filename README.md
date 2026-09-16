@@ -22,7 +22,7 @@ npx astro build   # hatasız bitmeli -> dist/
 
 ## Yayınlama (ücretsiz)
 
-1. **GitHub'a gönder (GitHub Desktop):** klasörü aç → repo oluştur (`KULLANICI/techpy.net`) → Commit → Push. `node_modules/` ve `dist/` gönderilmez (`.gitignore` içinde).
+1. **GitHub'a gönder (GitHub Desktop):** klasörü aç → repo oluştur (`Serince/techpy.net`) → Commit → Push. `node_modules/` ve `dist/` gönderilmez (`.gitignore` içinde).
 2. **Cloudflare Pages:** Workers & Pages → Create → Pages → Connect to Git → repo seç → preset **Astro** (build: `npm run build`, output: `dist`) → env `NODE_VERSION=20` → Deploy.
 3. **Domain:** Pages projesinde Custom domains → `techpy.net` ekle → alan adı panelinde nameserver'ları Cloudflare'e çevir. `public/_redirects` eski linkleri otomatik taşır.
 

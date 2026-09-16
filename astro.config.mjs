@@ -17,7 +17,7 @@ export default defineConfig({
         { icon: 'youtube', label: 'YouTube', href: 'https://www.youtube.com/results?search_query=techpy' },
         { icon: 'github', label: 'GitHub', href: 'https://github.com/' },
       ],
-      editLink: { baseUrl: 'https://github.com/KULLANICI/techpy.net/edit/main/' },
+      editLink: { baseUrl: 'https://github.com/Serince/techpy.net/edit/main/' },
       customCss: ['./src/styles/custom.css'],
       components: { MarkdownContent: './src/components/DersIcerik.astro' },
       sidebar: [
