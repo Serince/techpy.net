@@ -52,15 +52,8 @@
 /* kod blokları vurgusu */
 .expressive-code { --ec-brdCol: #ffb03455; }
 
-/* Matematik formülleri (KaTeX, MathJax görünümü) */
-@import 'katex/dist/katex.min.css';
-.katex-display { overflow-x: auto; overflow-y: visible; padding: 1.1rem 1.2rem 1.3rem; background: var(--sl-color-gray-6); border-left: 4px solid #ffb034; border-radius: 0 0.6rem 0.6rem 0; margin: 1.2rem 0; line-height: 2.1; }
-:root[data-theme='light'] .katex-display { background: #eef3fa; border-left-color: #b56f00; }
-.katex-display .katex { font-size: 1.28em; }
-.katex-display .katex-display { padding: 0; margin: 0; background: none; border: 0; }
-.katex-display .mfrac .frac-line { border-bottom-width: 0.06em; }
-.katex-display .mfrac { margin: 0.3em 0 0.28em; }
-.katex-display .mord, .katex-display .mop, .katex-display .mrel, .katex-display .mbin { font-size: 1.02em; }
-.katex { font-size: 1.12em; }
-.katex .mfrac { font-size: 1.04em; }
-.katex .frac-line { border-bottom-width: 0.05em; }
+/* Matematik formülleri (MathJax) */
+mjx-container { overflow-x: auto; overflow-y: visible; }
+mjx-container[jax="CHTML"][display="true"] { padding: 1rem 1.2rem; background: var(--sl-color-gray-6); border-left: 4px solid #ffb034; border-radius: 0 0.6rem 0.6rem 0; margin: 1.2rem 0; font-size: 1.15em; }
+:root[data-theme='light'] mjx-container[jax="CHTML"][display="true"] { background: #eef3fa; border-left-color: #b56f00; }
+mjx-container[jax="CHTML"]:not([display="true"]) { font-size: 1.05em; }

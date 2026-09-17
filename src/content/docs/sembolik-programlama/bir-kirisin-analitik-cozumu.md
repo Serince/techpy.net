@@ -51,7 +51,9 @@ $$w(0) = 0, \qquad w(L) = 0, \qquad \left. \frac{\mathrm{d}^2 w}{\mathrm{d}x^2} 
 Sınır şartlarını kullanarak bilinmeyen katsayılar elde edilir ve yer değiştirme denklemi w(x) elde edilir.
 
 
-$$w(x) = \frac{q\,x\,\left(x^3 - 2Lx^2 + L^3\right)}{24\,E\,I} \quad \text{(aşağı sarkma yönünde negatif alınır)}$$
+$$w(x) = \frac{q\,x\,\left(x^3 - 2Lx^2 + L^3\right)}{24\,E\,I}$$
+
+> Aşağı sarkma yönünde negatif alınır.
 
 
 Bu işlemleri Python içerisinde dsolve komutu ile kolayca yapabilirsiniz.
