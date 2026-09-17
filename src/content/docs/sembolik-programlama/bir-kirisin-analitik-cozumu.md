@@ -67,10 +67,12 @@ Yukarıda W ile tanımladığımız denklem iki ucu basit mesnetli yayılı yük
 
 
 $$
-q=0.1 \dfrac{N}{m} \\
-    L=100 \ mm \\
-    h=b=1 \ mm \\
-    E=210000 \ MPa
+\begin{aligned}
+q &= 0.1 \ \mathrm{\frac{N}{m}} \\
+L &= 100 \ \mathrm{mm} \\
+h = b &= 1 \ \mathrm{mm} \\
+E &= 210000 \ \mathrm{MPa}
+\end{aligned}
 $$
 
 

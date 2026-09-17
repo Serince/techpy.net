@@ -29,7 +29,7 @@ L=K-V
 İlk iki satırda kuvvetimizin ve yer değişimlerimizin zamana bağlı birer fonksiyon olduğunu tanımladık. 3. satırda kinetik enerji (Kütlenin hareketinin enerjisi) ve 4. satırda ise basit kütle yay sisteminin potansiyel enerjisinin denklemini yazdık (Yayda depolanan enerji). Bu enerjilerin farkı bize hareket denklemini vermektedir. Bunu da son satırda L olarak tanımladık. Bu ifadeyi daha da basitleştiriebiliriz. Bunun için Euler-Lagrange eşitliğini kullanabiliriz.
 
 
-$\cfrac{\mathrm{d} \mathcal{L}}{\mathrm{d}x} - \cfrac{\mathrm{d}}{\mathrm{d} t}\left(\cfrac{\mathrm{d}\mathcal{L}}{\mathrm{d}x'}\right)=0$
+$\dfrac{\mathrm{d} \mathcal{L}}{\mathrm{d}x} - \dfrac{\mathrm{d}}{\mathrm{d} t}\left(\dfrac{\mathrm{d}\mathcal{L}}{\mathrm{d}x'}\right)=0$
 
 
 Sympy kullanarak hareket denklemimizi tekrar hesaplayalım:
