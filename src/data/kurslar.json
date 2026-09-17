@@ -20,10 +20,10 @@
  {
   "baslik": "İstatistik ve Veri Analizi",
   "seviye": "Orta",
-  "aciklama": "Karar verme testleri, korelasyon, deney tasarımı, Monte Carlo ve frekans analizi.",
+  "aciklama": "Karar verme testleri, korelasyon, deney tasarımı ve Monte Carlo simülasyonu.",
   "kapak": "/kapaklar/kurs-istatistik.jpg",
   "href": "/istatistik/ayaginiz-yerden-kesilsin/",
-  "dersSayisi": 10,
+  "dersSayisi": 7,
   "slug": "istatistik"
  },
  {
@@ -38,10 +38,10 @@
  {
   "baslik": "Görüntü İşleme",
   "seviye": "Orta-İleri",
-  "aciklama": "OpenCV kurulumu, yüz algılama, YOLO/SSD takibi, ArUco ve kamera kalibrasyonu.",
+  "aciklama": "OpenCV kurulumu, yüz algılama, YOLO/SSD takibi, ArUco, kamera kalibrasyonu ve frekans analizi.",
   "kapak": "/kapaklar/kurs-goruntu.jpg",
   "href": "/goruntu-isleme/goruntu-isleme-kutuphanelerinin-kurulmasi/",
-  "dersSayisi": 8,
+  "dersSayisi": 11,
   "slug": "goruntu-isleme"
  },
  {

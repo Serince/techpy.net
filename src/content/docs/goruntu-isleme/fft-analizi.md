@@ -2,7 +2,7 @@
 title: "FFT Analizi"
 description: "Bu video, Fourier Dönüşümü (FFT) adı verilen güçlü bir analitik aracı tanıtmaktadır. Karmaşık sinyallerin aslında hangi basit alt sinyallerden oluştuğunu görmemize yarayan bu işlem,"
 sidebar:
-  order: 8
+  order: 9
 youtube: OcS5kXsLW6A
 yazar: "Çağatay Özbudak"
 yazarKanal: "https://www.youtube.com/@cagatayozbudak6106"

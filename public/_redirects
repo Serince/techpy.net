@@ -11,16 +11,16 @@
 /tr/2022/05/25/yuz-algilama-ve-grafik/  /goruntu-isleme/yuz-algilama-ve-grafik/  301
 /tr/2021/03/24/ayaginiz-yerden-kesilsin/  /istatistik/ayaginiz-yerden-kesilsin/  301
 /tr/2024/06/20/deney-tasarimi/  /istatistik/deney-tasarimi/  301
-/tr/2025/08/04/fft-analizi/  /istatistik/fft-analizi/  301
+/tr/2025/08/04/fft-analizi/  /goruntu-isleme/fft-analizi/  301
 /2025/08/04/fft-analizi/  /istatistik/fft-analizi/  301
 /tr/2024/06/20/istatistiksel-karar-verme-2/  /istatistik/istatistiksel-karar-verme-2/  301
 /tr/2023/07/03/istatistiksel-karar-verme/  /istatistik/istatistiksel-karar-verme/  301
-/tr/2025/08/04/kameradaki-hareketten-frekans-analizi/  /istatistik/kameradaki-hareketten-frekans-analizi/  301
+/tr/2025/08/04/kameradaki-hareketten-frekans-analizi/  /goruntu-isleme/kameradaki-hareketten-frekans-analizi/  301
 /2025/08/04/kameradaki-hareketten-frekans-analizi/  /istatistik/kameradaki-hareketten-frekans-analizi/  301
 /tr/2024/06/20/korelasyon-matrisi/  /istatistik/korelasyon-matrisi/  301
 /tr/2025/07/11/monte-carlo-analizi/  /istatistik/monte-carlo-analizi/  301
 /2025/07/11/monte-carlo-analizi/  /istatistik/monte-carlo-analizi/  301
-/tr/2025/08/04/noktanin-yer-degisiminden-frekans-olcumu/  /istatistik/noktanin-yer-degisiminden-frekans-olcumu/  301
+/tr/2025/08/04/noktanin-yer-degisiminden-frekans-olcumu/  /goruntu-isleme/noktanin-yer-degisiminden-frekans-olcumu/  301
 /2025/08/04/noktanin-yer-degisiminden-frekans-olcumu/  /istatistik/noktanin-yer-degisiminden-frekans-olcumu/  301
 /tr/2021/05/02/permutasyon-kombinasyon/  /istatistik/permutasyon-kombinasyon/  301
 /tr/2023/05/22/makine-ogrenmesi-icin-veri-temizleme-ve-model-iyilestirme/  /makine-ogrenmesi/makine-ogrenmesi-icin-veri-temizleme-ve-model-iyilestirme/  301
@@ -56,3 +56,6 @@
 /tr/2023/05/22/websitesinden-tablo-verisi-cekme/  /veri-hazirlama/websitesinden-tablo-verisi-cekme/  301
 /2021/05/02/permutasyon-kombinasyon/  /istatistik/permutasyon-kombinasyon/  301
 /tr  /  301
+/istatistik/fft-analizi/  /goruntu-isleme/fft-analizi/  301
+/istatistik/kameradaki-hareketten-frekans-analizi/  /goruntu-isleme/kameradaki-hareketten-frekans-analizi/  301
+/istatistik/noktanin-yer-degisiminden-frekans-olcumu/  /goruntu-isleme/noktanin-yer-degisiminden-frekans-olcumu/  301

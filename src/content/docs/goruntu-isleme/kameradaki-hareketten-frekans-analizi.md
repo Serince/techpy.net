@@ -2,7 +2,7 @@
 title: "Kameradaki Hareketten Frekans Analizi"
 description: "Bu video, videolardaki hareket değişimlerine bağlı olarak frekans analizi yapma üzerine bir çalışma sunmuştur. Süreç boyunca gerekli kütüphaneler yüklenmiş, videolar açılmış ve bir hareket"
 sidebar:
-  order: 9
+  order: 10
 youtube: J5vbGb-oOWQ
 yazar: "Çağatay Özbudak"
 yazarKanal: "https://www.youtube.com/@cagatayozbudak6106"
