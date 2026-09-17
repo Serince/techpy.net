@@ -2,7 +2,7 @@
 title: "Makine Öğrenmesi ile Kira Tahmini"
 description: "Elde edilen verilerden anlamlı sonuçlar çıkartma ve bu dataları  kullanarak tahminler yapmak için makine öğrenmesi bir çok araç sunmaktadır. Bu ilk videoda daha önce internetten veri çekme"
 sidebar:
-  order: 1
+  order: 13
 youtube: 85EMO3wJgdE
 yazar: "Semih Korkmaz"
 yazarKanal: "https://www.youtube.com/@semihkorkmaz5698"

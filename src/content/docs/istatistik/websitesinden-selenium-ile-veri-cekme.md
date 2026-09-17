@@ -2,7 +2,7 @@
 title: "Websitesinden Selenium ile Veri Çekme"
 description: "Websitesinden veri çekmek için pythonda bir çok yöntem var. Belki bunlardan en garantisi selenium ile websitesini sanki bir kullancı kullanyormuş gibi açarak veriyi elde etmektir."
 sidebar:
-  order: 3
+  order: 10
 youtube: -0uomew3kdI
 yazar: "Aykhan Gurbanov"
 yazarKanal: "https://www.youtube.com/@aykhangurbanov7216"

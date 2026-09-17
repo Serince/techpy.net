@@ -11,12 +11,12 @@ durum: tam
 ---
 İç içe geçmiş fonksiyonlar hesaplama olarak maliyetli olsa da bazen hayat kurtarıcı olabiliyor. Bir fonksiyon ile başka bir fonksiyonu çağırıp onunla işlem yapabildiğiniz gibi, fonksiyonla fonksiyonun kendisini çağırabiliyorsunuz (öz yinelemeli). Yani döngü ifadelerini yazmadan döngü yapıyorsunuz. Hadi şimdi biraz matematik yazalım, sonra kodlayalım matematiği. Yine faktöriyel kodlayalım ama bu sefer biraz değişik bir şekilde. Aslında burada bir işlemi yapabilmenin bir sürü yolu olabileceğini de göstermiş oluyoruz böylece.
 
-<div class="wp-block-katex-display-block katex-eq" katex-display="true">
 
-    n!=n \cdot (n-1)! \\
+$$
+n!=n \cdot (n-1)! \\
     0!=1
+$$
 
-</div>
 
 Yukarıdaki matematiksel ifadelere bakarsanız aslında bu faktöriyelin tanımı. Başına n doğal sayılarda ifadesini de eklesem tam olacak. Her sayının faktöriyeli sayı ile onun bir eksiğinin faktöriyelinin çarpımıdır ve 0’ın faktöriyeli 1’dir. Hadi kodlayalım!
 

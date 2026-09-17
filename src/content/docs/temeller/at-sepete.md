@@ -11,11 +11,9 @@ durum: tam
 ---
 Döngülere biraz daha dalalım. Bu sefer biraz matematik kullanalım. Matematik bir dildir derler ya, o zaman matematik dilinden Python programlama diline çeviri yapalım. Toplam sembolü kodlayalım biraz.
 
-<div class="wp-block-katex-display-block katex-eq" katex-display="true">
 
-    \sum_{i=1}^{10}{i}
+$\sum_{i=1}^{10}{i}$
 
-</div>
 
 Burada i değişkeni 1’den başlayarak 10’a kadar ilerliyor ve toplam sembolü sebebiyle biz bu i’lerin hepsini topluyoruz. Şimdi Python’a çevirelim bu matematiği.
 
@@ -31,8 +29,6 @@ Bu kodu yazmadaki en büyük sorun aslında *i* her bir döngüde değişiyor ve
 
 **Sıra sizde:** Yukarıdaki kodu değiştirerek şu matematiği de siz Python’a çevirin.
 
-<div class="wp-block-katex-display-block katex-eq" katex-display="true">
 
-    \sum_{i=5}^{50}{2i}
+$\sum_{i=5}^{50}{2i}$
 
-</div>

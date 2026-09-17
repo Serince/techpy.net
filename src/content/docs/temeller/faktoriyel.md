@@ -11,22 +11,20 @@ durum: tam
 ---
 Bilgisayar programlarının en iyi yaptığı şey birşeyi tekrar etmektir. Bu tekrarlar çeşitli yöntemlerle gerçekleştirilebilir. Döngüler bu tekrarların yapılabileceği araçlardır. Bu denemde “for” döngüsünü göreceğiz. Tabi ki konu anlatmak yerine bir örnek uygulamayla yapacağız. Örneğimiz faktöriyel hesaplama. Bildiğiniz üzere faktöriyel hesaplamada faktöriyeli hesaplanacak sayıdan 0’a doğru tüm sayılar sırayla çarpılır. Aşağıda bir örneği görülüyor.
 
-<div class="wp-block-katex-display-block katex-eq" katex-display="true">
 
-    {1!=1} \\
+$$
+{1!=1} \\
     2!=2 .1=2 \\
     3!=3.2.1=6\\
-    4!=4.3.2.1=24 
+    4!=4.3.2.1=24
+$$
 
-</div>
 
 ya da serilerle şu şekilde ifade edebiliriz.
 
-<div class="wp-block-katex-display-block katex-eq" katex-display="true">
 
-    \prod_{i=1}^{n}{i}=n!
+$\prod_{i=1}^{n}{i}=n!$
 
-</div>
 
 Şimdi bu matematiksel ifadeyi programlayalım.
 

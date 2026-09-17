@@ -28,11 +28,9 @@ L=K-V
 
 İlk iki satırda kuvvetimizin ve yer değişimlerimizin zamana bağlı birer fonksiyon olduğunu tanımladık. 3. satırda kinetik enerji (Kütlenin hareketinin enerjisi) ve 4. satırda ise basit kütle yay sisteminin potansiyel enerjisinin denklemini yazdık (Yayda depolanan enerji). Bu enerjilerin farkı bize hareket denklemini vermektedir. Bunu da son satırda L olarak tanımladık. Bu ifadeyi daha da basitleştiriebiliriz. Bunun için Euler-Lagrange eşitliğini kullanabiliriz.
 
-<div class="wp-block-katex-display-block katex-eq" katex-display="true">
 
-    \cfrac{\mathrm{d} \mathcal{L}}{\mathrm{d}x} - \cfrac{\mathrm{d}}{\mathrm{d} t}\left(\cfrac{\mathrm{d}\mathcal{L}}{\mathrm{d}x'}\right)=0
+$\cfrac{\mathrm{d} \mathcal{L}}{\mathrm{d}x} - \cfrac{\mathrm{d}}{\mathrm{d} t}\left(\cfrac{\mathrm{d}\mathcal{L}}{\mathrm{d}x'}\right)=0$
 
-</div>
 
 Sympy kullanarak hareket denklemimizi tekrar hesaplayalım:
 
@@ -42,19 +40,15 @@ Eq(diff(L,x)-diff(L,diff(x,t),t),0)
 
 İlk başta *Eq* fonksiyonu eşitlik tanımlamak için yazıldı. Denklemde göreceğiniz üzere eşitliğin sağ tarafı 0. Sonrasında her bir ifade aynı şekilde eklendi. Böylece aşağıdaki hareket denklemini elde ettik.
 
-<div class="wp-block-katex-display-block katex-eq" katex-display="true">
 
-    - k x{\left(t \right)} - m \frac{d^{2}}{d t^{2}} x{\left(t \right)} + f{\left(t \right)} = 0
+$- k x{\left(t \right)} - m \frac{d^{2}}{d t^{2}} x{\left(t \right)} + f{\left(t \right)} = 0$
 
-</div>
 
 Yer değiştirmenin ikinci türevi ivmedir. Yukarıdaki ifadeyi daha basit yazarsak:
 
-<div class="wp-block-katex-display-block katex-eq" katex-display="true">
 
-    m\cdot a+ k\cdot x= f
+$m\cdot a+ k\cdot x= f$
 
-</div>
 
 Euler-Lagrange hesaplamasını hızlıca yapmak için sympy fonksiyonlarını da kullanabilirsiniz. Bunun için *calculus* içindeki *euler_equations* fonksiyonu aynı işlemi yapmaktadır.
 
@@ -66,8 +60,6 @@ Burada ifadenin sonunda \[0\] yazmamızın sebebi, bu fonksiyon çok boyutlu ve 
 
 **Sıra sizde:** Daha basit bir ifadeyi, sadece bir kütlenin hareket denklemini yukarıdakilere benzer prosedürle çıkarır mısınız? Cevabını ben yazayım siz bu ifadeyi yakalamaya çalışın.
 
-<div class="wp-block-katex-display-block katex-eq" katex-display="true">
 
-    m \cdot g +m \cdot \frac{dx^2} {d^2t}
+$m \cdot g +m \cdot \frac{dx^2} {d^2t}$
 
-</div>

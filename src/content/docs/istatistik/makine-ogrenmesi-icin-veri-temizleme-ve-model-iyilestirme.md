@@ -2,7 +2,7 @@
 title: "Makine Öğrenmesi için Veri Temizleme ve Model İyileştirme"
 description: "Daha önce internetten veri çekme videolarımızlaelde ettiğimiz veriler üzerinden çeşitli yöntemler kullanarak makine öğrenmesi ile tahminler gerçekleştirdik. Ancak Kurduğumuz"
 sidebar:
-  order: 2
+  order: 14
 youtube: r4taMg25jaM
 yazar: "Ahmet Özkan Canlı"
 yazarKanal: "https://www.youtube.com/@AhmetOzkanCanli"

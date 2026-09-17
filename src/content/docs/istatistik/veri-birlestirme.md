@@ -2,7 +2,7 @@
 title: "Veri Birleştirme"
 description: "Elde edilen verilerin belirli kurallarla birşeltirilmesi veri analizi için oldukça önemlidir. Burada basit bir data üzerinden verilerin birleştirilmesi anlatılmaktadır."
 sidebar:
-  order: 5
+  order: 12
 youtube: 5Kw0onc9NG4
 yazar: "Barkın Tekeli"
 yazarKanal: "https://www.youtube.com/@barkntekeli7044"

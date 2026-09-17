@@ -2,7 +2,7 @@
 title: "Makine Öğrenmesi Modellerini Kıyaslama"
 description: "Bu video, Titanic veri seti üzerinde farklı makine öğrenmesi modellerinin karşılaştırılmasını ele almaktadır. Amaç, aynı veri seti ve koşullar altında algoritmaların performansını gözlemlemektir.  •Ve"
 sidebar:
-  order: 3
+  order: 15
 youtube: CLqDDj8l6Ow
 yazar: "Umut Kale"
 yazarKanal: "https://www.youtube.com/@umutkale7089"

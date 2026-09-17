@@ -11,11 +11,9 @@ durum: tam
 ---
 En hızlı kök bulma yöntemi diye adlandırılabilir Newton-Raphson algoritması. Sayısal yöntemlerde hızı sebebiyle yaygınca kullanılan bir yöntem. Taylor serisinin ilk türevi ifadesine kadar açılımından çıkarılabilir ve matematiksel olarak şu şekilde ifade edilir:
 
-<div class="wp-block-katex-display-block katex-eq" katex-display="true">
 
-    x_{n+1}=x_n- \frac {f(x_n)}{f'(x_n)}
+$x_{n+1}=x_n- \frac {f(x_n)}{f'(x_n)}$
 
-</div>
 
 Yani, kökü bulurken bir başlangıç değerinden başlayarak, belirlediğimiz değerin fonksiyondaki değeri ile türevindeki değerinin oranı kadar azaltarak sonraki değerini hesapla. Bulduğumuz değeri tekrar yukarıdaki ifadede hesaplayarak ilerlersek, gidilebilecek en kısa yoldan köke yaklaşacaksınız. Ama maalesef bu yöntem kökü bulmayı garanti etmez. Yani bazen kökü bulamayabilirsiniz. Bu matematiksel ifadeyi döngü şeklinde Python’da yazarsak:
 
@@ -39,11 +37,9 @@ Belli bir bilinmeyen değere yaklaşarak yapılacak çözümlerde while döngüs
 
 While içindeki iterasyonlarda iki hesaplama yapılıyor: bir sonraki kök (yukarıdaki denklemin aynısı) ve hata oranı (döngünün çalışabilmesi için). Burada hata oranını gerçek kökü bilmediğimiz için hesaplamak zor. Ancak bu tip durumlar için bulduğumuz kökün bir önceki iterasyona göre değişimini bir kriter olarak kullanabiliriz. Bağıl hatayı matematiksel olarak şöyle yazabiliriz:
 
-<div class="wp-block-katex-display-block katex-eq" katex-display="true">
 
-    \delta =\mid \frac{ŞimdikiKök - ÖncekiKök}{ŞimdikiKök}\mid
+$\delta =\mid \frac{ŞimdikiKök - ÖncekiKök}{ŞimdikiKök}\mid$
 
-</div>
 
 Bu hesabı yapabilmek için bir önceki iterasyondaki kökü hafızada tutmak gerekli. Bu sebeple ilk satırda previous yazarak kök hesaplamadan önceki iterasyondaki kök hafızaya aldık. Sonraki satırda ise Newthon-Raphson ifadesiyle sonraki kökü bulduk ve bağıl hatayı hesapladık. Bu işlemler hesapladığımız bağıl hata toleransdan küçük olana kadar devam edecek ve döngü durduğunda hesaplanan en son kök değeri kök ifadesi olarak return ile geri gönderilecek. Bu algoritmayı sin(x) için kullanalım.
 

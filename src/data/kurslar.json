@@ -20,10 +20,10 @@
  {
   "baslik": "İstatistik ve Veri Analizi",
   "seviye": "Orta",
-  "aciklama": "Karar verme testleri, korelasyon, deney tasarımı ve Monte Carlo simülasyonu.",
+  "aciklama": "Temel istatistikten veri toplamaya, model kurmaya ve frekans analizine uzanan tam yol: karar testleri, korelasyon, deney tasarımı, Monte Carlo, veri çekme ve makine öğrenmesi.",
   "kapak": "/kapaklar/kurs-istatistik.jpg",
   "href": "/istatistik/ayaginiz-yerden-kesilsin/",
-  "dersSayisi": 7,
+  "dersSayisi": 16,
   "slug": "istatistik"
  },
  {
@@ -43,23 +43,5 @@
   "href": "/goruntu-isleme/goruntu-isleme-kutuphanelerinin-kurulmasi/",
   "dersSayisi": 11,
   "slug": "goruntu-isleme"
- },
- {
-  "baslik": "Makine Öğrenmesi",
-  "seviye": "İleri",
-  "aciklama": "Kira tahmini, veri temizleme, model kıyaslama ve özellik etkisi.",
-  "kapak": "/kapaklar/kurs-ml.jpg",
-  "href": "/makine-ogrenmesi/makine-ogrenmesi-ile-kira-tahmini/",
-  "dersSayisi": 4,
-  "slug": "makine-ogrenmesi"
- },
- {
-  "baslik": "Veri Hazırlama",
-  "seviye": "Orta",
-  "aciklama": "Webden, tablodan, Selenium ile ve metin belgesinden veri çekme ve birleştirme.",
-  "kapak": "/kapaklar/kurs-veri.jpg",
-  "href": "/veri-hazirlama/python-ile-websitesinden-veri-cekme/",
-  "dersSayisi": 5,
-  "slug": "veri-hazirlama"
  }
 ]

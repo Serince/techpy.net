@@ -20,11 +20,9 @@ durum: tam
 
 Burada anahtar kavramlar girdi ve çıktıdır. Çok basit gibi görünür ama en çok karıştırılan kısımdır bu girdi çıktı mevzusu. Matematik fonksiyonu olarak düşünürseniz, örneğin;
 
-<div class="wp-block-katex-display-block katex-eq" katex-display="true">
 
-    f(x,y,z)=x^2+2xy-z^3
+$f(x,y,z)=x^2+2xy-z^3$
 
-</div>
 
 fonksiyonunda girdiler yani (inputlar) x, y, z’dir. Bunlar sağlanmadan bu fonksiyonun çıktısı (output) hesaplanamaz. Şimdi bu girişten sonra hemen bir kod yazalım onun üzerinden python’da fonksiyonel programlamayı inceleyelim. Daha önceden *for* döngüsüyle yaptığımız faktöriyel hesabını bu sefer while döngüsüyle yapalım ve bunu aynı zamanda Fonksiyonel programlama ile gerçekleştirelim.
 

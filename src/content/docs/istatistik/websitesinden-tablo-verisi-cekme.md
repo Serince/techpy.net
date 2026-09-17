@@ -2,7 +2,7 @@
 title: "Websitesinden Tablo Verisi Çekme"
 description: "Websitesinden veri çekmek için pythonda bir çok yöntem var. Belki bunlardan en kolayı websitesinde tablo halinde bulunan veriyi pandas kütüphanesiyle linkini yazarak direk almaktır. Bu"
 sidebar:
-  order: 2
+  order: 9
 youtube: e8id0TRD8_g
 yazar: "Aykhan Gurbanov"
 yazarKanal: "https://www.youtube.com/@aykhangurbanov7216"

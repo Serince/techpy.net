@@ -2,7 +2,7 @@
 title: "Metin Belgesinden Veri Çekme"
 description: "Veri analizi yapmak yada makine öğrenmesindeki dataların ayıklanması bir çok kaynaktan yapılabilmektedir. Bu çalışmada , calculix sonlu elemanlar analizi sonuç dosyalası olan frd dosyasından gerilme"
 sidebar:
-  order: 4
+  order: 11
 youtube: Bo9h-7oHMrs
 yazar: "Batu Bayrak"
 yazarKanal: "https://www.youtube.com/@batubayrak80"

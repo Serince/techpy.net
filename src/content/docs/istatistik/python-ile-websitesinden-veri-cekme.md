@@ -2,7 +2,7 @@
 title: "Python ile websitesinden veri çekme"
 description: "*Hazırlayan: Burak Şen - Veri analizi için ilk aşama iyi bir veri setine sahip olmaktır. Ancak çoğu zaman bu mümkün olamayabilir. Bu video serisinde bir emlak istesinden çeşitli veriler çekilerek bunl"
 sidebar:
-  order: 1
+  order: 8
 youtube:
   - tOqdi5zWiyo
   - YmiWxjXt56M

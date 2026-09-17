@@ -2,7 +2,7 @@
 title: "Parametrenin Model Sonucuna Etkisi"
 description: "Bu video, Titanic veri seti üzerinde Random Forest modeli kullanarak hangi özelliklerin (feature importance) yolcuların hayatta kalıp kalmamasını tahmin etmede ne kadar etkili olduğunu incelemektedir."
 sidebar:
-  order: 4
+  order: 16
 youtube: oCBZVyqddy4
 yazar: "Umut Kale"
 yazarKanal: "https://www.youtube.com/@umutkale7089"

@@ -11,11 +11,9 @@ durum: tam
 ---
 Fonksiyonel programlama kod satırları biraz uzadıkça oldukça önemli hale geliyor. Bol uygulama yaparak mantığını hazmetmek oldukça önemli. Şimdi sıcaklık birimlerini dönüştüren bir fonksiyon yazalım. Önce bir hatırlarsak neydi bu sıcaklık birimlerinin ilişkileri;
 
-<div class="wp-block-katex-display-block katex-eq" katex-display="true">
 
-    \frac {C}{100}=\frac {F-32}{180}=\frac {K-273.15}{100}
+$\frac {C}{100}=\frac {F-32}{180}=\frac {K-273.15}{100}$
 
-</div>
 
 Programı yazmadan önce programın tasarımını yaparsak:
 
