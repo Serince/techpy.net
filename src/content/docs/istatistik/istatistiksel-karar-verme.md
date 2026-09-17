@@ -13,4 +13,3 @@ durum: video
 ---
 Girdilerin çıktıyı ne kadar etkilediğini Anova testi ve Pearson's R ile ölçüyoruz. Bu videoda önce Anova testiyle girdi ve çıktıların tutarlılığı kontrol ediliyor, sonra Pearson's R ile etkinin büyüklüğü belirleniyor. Veriye bakıp karar vermek isteyenlerin temel videosu.
 
-**Kaynaklar:** [Özgün yazı](https://techpy.net/tr/2023/07/03/istatistiksel-karar-verme/) • [Telegram duyurusu](https://t.me/techpy_net/56)

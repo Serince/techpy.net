@@ -13,4 +13,3 @@ durum: video
 ---
 Belirsizliği binlerce tekrarla olasılığa çeviren Monte Carlo simülasyonunu Python ile yapıyoruz. Bu videoda İstanbul-Rotterdam gemi sefer süresi örneği üzerinden istatistiksel simülasyon mantığını uygulamalı görüyoruz.
 
-**Kaynaklar:** [Özgün yazı](https://techpy.net/2025/07/11/monte-carlo-analizi/) • [Telegram duyurusu](https://t.me/techpy_net/69)

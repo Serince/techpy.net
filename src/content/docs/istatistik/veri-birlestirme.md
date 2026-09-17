@@ -13,4 +13,3 @@ durum: video
 ---
 Farklı kaynaklardan gelen verileri belirli kurallarla tek tabloda birleştiriyoruz. Bu videoda basit bir veri üzerinden birleştirme mantığını görüyoruz; veri analizi öncesi hazırlığın olmazsa olmaz adımı.
 
-**Kaynaklar:** [Özgün yazı](https://techpy.net/tr/2024/05/31/veri-birlestirme/) • [Telegram duyurusu](https://t.me/techpy_net/58)

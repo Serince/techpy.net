@@ -14,4 +14,3 @@ durum: video
 
 Canlı frekanstaki sinyali Raspberry Pi üzerinde görüntü işlemeyle yakalıyoruz. Bu videoda kameradan gelen görüntüden frekans bilgisini anlık çıkartan uygulamayı adım adım kuruyoruz; frekans analizi serisinin donanım üzerindeki karşılığı.
 
-**Kaynaklar:** [Telegram duyurusu](https://t.me/techpy_net/76)

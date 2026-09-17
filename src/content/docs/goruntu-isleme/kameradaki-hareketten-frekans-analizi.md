@@ -13,4 +13,3 @@ durum: video
 ---
 Videodaki hareket değişimlerinden frekans analizi yapan uygulamayı kuruyoruz. Bu videoda gerekli kütüphaneler yüklenip videolar açılıyor, hareket bilgisi karelerden çıkarılarak frekans hesaplanıyor.
 
-**Kaynaklar:** [Özgün yazı](https://techpy.net/2025/08/04/kameradaki-hareketten-frekans-analizi/) • [Telegram duyurusu](https://t.me/techpy_net/73)

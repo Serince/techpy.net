@@ -13,4 +13,3 @@ durum: video
 ---
 Elimizdeki küpü döndürünce sanal modelin de aynı şekilde döndüğü artırılmış gerçeklik uygulaması. Bu videoda önceden modellediğimiz sanal cismi gerçek küpün hareketine bağlıyor, ArUco işaretçilerle konumu anlık takip ediyoruz. Gerçekle sanalı buluşturan eğlenceli bir proje.
 
-**Kaynaklar:** [Özgün yazı](https://techpy.net/tr/2024/05/18/goruntu-isleme-ile-artirilmis-gerceklik/) • [Telegram duyurusu](https://t.me/techpy_net/57)

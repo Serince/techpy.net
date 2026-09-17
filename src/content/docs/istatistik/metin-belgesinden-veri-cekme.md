@@ -13,4 +13,3 @@ durum: video
 ---
 CalculiX sonlu elemanlar analizinin frd sonuç dosyasından gerilme verilerini ayıklıyoruz. Bu videoda metin belgesi formatındaki mühendislik çıktılarının içinden ihtiyacımız olan dataları çekip analize hazır hale getiriyoruz. Simülasyonla uğraşanların işine yarayacak bir beceri.
 
-**Kaynaklar:** [Özgün yazı](https://techpy.net/tr/2024/06/20/metin-belgesinden-veri-cekme/) • [Telegram duyurusu](https://t.me/techpy_net/61)

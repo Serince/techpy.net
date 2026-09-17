@@ -24,7 +24,7 @@ export default defineConfig({
       ],
       editLink: { baseUrl: 'https://github.com/Serince/techpy.net/edit/main/' },
       customCss: ['./src/styles/custom.css'],
-      components: { MarkdownContent: './src/components/DersIcerik.astro' },
+      components: { MarkdownContent: './src/components/DersIcerik.astro', Head: './src/components/SidebarScroll.astro' },
       sidebar: [
         { label: 'Başla', items: [{ slug: 'buradan-basla', label: 'Buradan Başla' }, { slug: 'katkida-bulun', label: 'Katkıda Bulun' }] },
         { label: 'Python Temelleri', autogenerate: { directory: 'temeller' }, collapsed: true },

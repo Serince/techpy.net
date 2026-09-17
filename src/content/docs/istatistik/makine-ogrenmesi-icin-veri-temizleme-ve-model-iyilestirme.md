@@ -13,4 +13,3 @@ durum: video
 ---
 Kurduğumuz tahmin modelini veri temizleme ve iyileştirme adımlarıyla daha isabetli hale getiriyoruz. Bu videoda internetten çektiğimiz veriler üzerinden çeşitli yöntemlerle tahminler gerçekleştiriyor, ardından modelin zayıf kaldığı noktaları temizleme ve iyileştirme teknikleriyle güçlendiriyoruz.
 
-**Kaynaklar:** [Özgün yazı](https://techpy.net/tr/2023/05/22/makine-ogrenmesi-icin-veri-temizleme-ve-model-iyilestirme/) • [Telegram duyurusu](https://t.me/techpy_net/53)

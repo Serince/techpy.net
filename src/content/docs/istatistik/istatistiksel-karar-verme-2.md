@@ -13,4 +13,3 @@ durum: video
 ---
 Tek yönlü Anova testini baştan sona uygulayıp sonuçların etkisini belirliyoruz. Bu videoda parametrik olarak elde edilen veri setinde girdi-çıktı tutarlılığı kontrol ediliyor, ardından girdilerin sonuçlar üzerindeki etkisi ölçülüyor.
 
-**Kaynaklar:** [Özgün yazı](https://techpy.net/tr/2024/06/20/istatistiksel-karar-verme-2/) • [Telegram duyurusu](https://t.me/techpy_net/60)

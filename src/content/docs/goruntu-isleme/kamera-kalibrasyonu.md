@@ -13,4 +13,3 @@ durum: video
 ---
 Kameranın balık-gözü ve fıçı gibi doğal bozulmalarını kalibrasyonla düzeltiyoruz. Bu videoda insan gözü gibi görmeyen kameraların görüntülerini ölçüm yapılabilir hale getiren kalibrasyon işlemini adım adım uyguluyoruz.
 
-**Kaynaklar:** [Özgün yazı](https://techpy.net/2025/08/04/kamera-kalibrasyonu/) • [Telegram duyurusu](https://t.me/techpy_net/70)

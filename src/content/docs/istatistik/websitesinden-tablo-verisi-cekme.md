@@ -13,4 +13,3 @@ durum: video
 ---
 Websitesindeki tablo halindeki veriyi pandas ile tek satırda çekmenin en kolay yolu. Bu videoda veri çekme yöntemleri arasından en pratik olanını görüyoruz: tablonun linkini pandas kütüphanesine verip veriyi doğrudan almak. Kodla uğraşmadan hızlıca veri setine kavuşmak isteyenlere.
 
-**Kaynaklar:** [Özgün yazı](https://techpy.net/tr/2023/05/22/websitesinden-tablo-verisi-cekme/) • [Telegram duyurusu](https://t.me/techpy_net/54)

@@ -13,4 +13,3 @@ durum: video
 ---
 Yolo V8 ile kaynaklardaki çatlakları bulan yapay zekâ uygulamasını inceliyoruz. Bu videoda önceden eğitilmiş modelle çalışan kaynak tespit uygulaması görüntü analizi yaparak insan hatasını azaltmayı hedefliyor.
 
-**Kaynaklar:** [Özgün yazı](https://techpy.net/2026/02/03/goruntu-isleme-ile-kaynak-kusuru-tespiti/) • [Telegram duyurusu](https://t.me/techpy_net/74)

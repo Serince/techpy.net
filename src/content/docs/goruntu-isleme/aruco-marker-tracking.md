@@ -13,4 +13,3 @@ durum: video
 ---
 ArUco işaretçilerin konum, yön ve hızını gerçek zamanlı takip eden uygulamayı kuruyoruz. Bu videoda robot lokalizasyonu ve artırılmış gerçeklikte kullanılan bu özel 2B barkodların kamera kalibrasyonuyla birlikte nasıl izlendiğini görüyoruz.
 
-**Kaynaklar:** [Özgün yazı](https://techpy.net/2025/07/09/aruco-marker-tracking/) • [Telegram duyurusu](https://t.me/techpy_net/65)

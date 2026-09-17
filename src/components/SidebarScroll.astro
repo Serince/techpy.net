@@ -1,0 +1,15 @@
+<script>
+(function () {
+  function scrollActive() {
+    var active = document.querySelector('nav[aria-label="Docs"] a[aria-current="page"], aside a[aria-current="page"], .sidebar a[aria-current="page"]');
+    if (!active) return false;
+    active.scrollIntoView({ block: 'center' });
+    return true;
+  }
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', function () { scrollActive() || setTimeout(scrollActive, 500); });
+  } else {
+    scrollActive() || setTimeout(scrollActive, 500);
+  }
+})();
+</script>

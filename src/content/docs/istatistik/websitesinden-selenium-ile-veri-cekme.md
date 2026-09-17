@@ -13,4 +13,3 @@ durum: video
 ---
 Sitenin sunmadığı veriyi, siteyi gerçek bir kullanıcı gibi açarak Selenium ile topluyoruz. Bu videoda websitesini sanki bir kullanıcı kullanıyormuş gibi açıp veriyi en garantili yöntemle elde ediyoruz. Dinamik sitelerle boğuşanların başvuracağı yöntem.
 
-**Kaynaklar:** [Özgün yazı](https://techpy.net/tr/2023/06/02/websitesinden-selenium-ile-veri-cekme/) • [Telegram duyurusu](https://t.me/techpy_net/55)

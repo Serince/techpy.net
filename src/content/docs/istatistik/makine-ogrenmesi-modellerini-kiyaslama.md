@@ -13,4 +13,3 @@ durum: video
 ---
 Aynı Titanic veri setinde farklı makine öğrenmesi modellerini yarıştırıyoruz. Bu videoda aynı veri ve koşullar altında algoritmaların performansını gözlemleyip hangi modelin ne zaman öne geçtiğini karşılaştırıyoruz.
 
-**Kaynaklar:** [Özgün yazı](https://techpy.net/2025/07/11/makine-ogrenmesi-modellerini-kiyaslama/) • [Telegram duyurusu](https://t.me/techpy_net/66)

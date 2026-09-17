@@ -13,4 +13,3 @@ durum: video
 ---
 Sınırlı kare hızına sahip kamerayla titreşim frekansını ölçüyoruz. Bu videoda bir nesnenin (örneğin bir silginin) konum değişimini kare kare izleyip buradan frekans bilgisini çıkartıyoruz.
 
-**Kaynaklar:** [Özgün yazı](https://techpy.net/2025/08/04/noktanin-yer-degisiminden-frekans-olcumu/) • [Telegram duyurusu](https://t.me/techpy_net/71)

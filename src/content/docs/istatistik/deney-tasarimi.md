@@ -13,4 +13,3 @@ durum: video
 ---
 Pahalı deneyleri ucuza getirmenin yolu: tam faktöriyel yerine akıllı deney tasarımı. Bu videoda parametrik analiz ve deneme süreçlerinin hesaplama/deney maliyetini düşüren tasarım yaklaşımını görüyoruz; klasik tam faktöriyel yöntemle karşılaştırmalı.
 
-**Kaynaklar:** [Özgün yazı](https://techpy.net/tr/2024/06/20/deney-tasarimi/) • [Telegram duyurusu](https://t.me/techpy_net/62)

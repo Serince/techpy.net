@@ -13,4 +13,3 @@ durum: video
 ---
 Random Forest modelinde hangi özelliğin tahmini ne kadar etkilediğini ölçüyoruz. Bu videoda Titanic veri setinde yolcuların hayatta kalmasını tahmin ederken özellik önemlerini (feature importance) çıkarıp yorumluyoruz.
 
-**Kaynaklar:** [Özgün yazı](https://techpy.net/2025/07/11/parametrenin-model-sonucuna-etkisi/) • [Telegram duyurusu](https://t.me/techpy_net/67)

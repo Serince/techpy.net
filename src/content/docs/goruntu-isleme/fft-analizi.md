@@ -13,4 +13,3 @@ durum: video
 ---
 Karmaşık sinyallerin içindeki basit bileşenleri Fourier Dönüşümüyle ortaya çıkarıyoruz. Bu videoda güçlü analitik araç FFT'yi tanıyıp bir sinyalin hangi alt sinyallerden oluştuğunu görselleştiriyoruz.
 
-**Kaynaklar:** [Özgün yazı](https://techpy.net/2025/08/04/fft-analizi/) • [Telegram duyurusu](https://t.me/techpy_net/72)
