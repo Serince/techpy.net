@@ -20,3 +20,4 @@ techpy.net bir dönem hosting sorunuyla kapandı; site, arşiv kayıtları ve Te
 
 Duyurular ve yeni dersler: [t.me/techpy_net](https://t.me/techpy_net)
 x
+x
