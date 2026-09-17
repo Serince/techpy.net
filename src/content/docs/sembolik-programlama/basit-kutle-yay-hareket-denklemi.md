@@ -29,7 +29,7 @@ L=K-V
 İlk iki satırda kuvvetimizin ve yer değişimlerimizin zamana bağlı birer fonksiyon olduğunu tanımladık. 3. satırda kinetik enerji (Kütlenin hareketinin enerjisi) ve 4. satırda ise basit kütle yay sisteminin potansiyel enerjisinin denklemini yazdık (Yayda depolanan enerji). Bu enerjilerin farkı bize hareket denklemini vermektedir. Bunu da son satırda L olarak tanımladık. Bu ifadeyi daha da basitleştiriebiliriz. Bunun için Euler-Lagrange eşitliğini kullanabiliriz.
 
 
-$\dfrac{\mathrm{d} \mathcal{L}}{\mathrm{d}x} - \dfrac{\mathrm{d}}{\mathrm{d} t}\left(\dfrac{\mathrm{d}\mathcal{L}}{\mathrm{d}x'}\right)=0$
+$$\frac{\mathrm{d} \mathcal{L}}{\mathrm{d}x} - \frac{\mathrm{d}}{\mathrm{d}t} \left( \frac{\mathrm{d} \mathcal{L}}{\mathrm{d}\dot{x}} \right) = 0 \qquad \left( \dot{x} \equiv \tfrac{\mathrm{d}x}{\mathrm{d}t} \right)$$
 
 
 Sympy kullanarak hareket denklemimizi tekrar hesaplayalım:
@@ -41,13 +41,10 @@ Eq(diff(L,x)-diff(L,diff(x,t),t),0)
 İlk başta *Eq* fonksiyonu eşitlik tanımlamak için yazıldı. Denklemde göreceğiniz üzere eşitliğin sağ tarafı 0. Sonrasında her bir ifade aynı şekilde eklendi. Böylece aşağıdaki hareket denklemini elde ettik.
 
 
-$- k x{\left(t \right)} - m \dfrac{d^{2}}{d t^{2}} x{\left(t \right)} + f{\left(t \right)} = 0$
+$$-k\,x(t) - m\,\frac{\mathrm{d}^2 x}{\mathrm{d}t^2} + f(t) = 0 \quad \Longleftrightarrow \quad m\,a + k\,x = f$$
 
 
-Yer değiştirmenin ikinci türevi ivmedir. Yukarıdaki ifadeyi daha basit yazarsak:
-
-
-$m\cdot a+ k\cdot x= f$
+Yer değiştirmenin ikinci türevi ivmedir ($a \equiv \mathrm{d}^2x/\mathrm{d}t^2$), o yüzden yukarıdaki denklem kısaca $m\,a + k\,x = f$ diye okunur.
 
 
 Euler-Lagrange hesaplamasını hızlıca yapmak için sympy fonksiyonlarını da kullanabilirsiniz. Bunun için *calculus* içindeki *euler_equations* fonksiyonu aynı işlemi yapmaktadır.
@@ -61,5 +58,5 @@ Burada ifadenin sonunda \[0\] yazmamızın sebebi, bu fonksiyon çok boyutlu ve 
 **Sıra sizde:** Daha basit bir ifadeyi, sadece bir kütlenin hareket denklemini yukarıdakilere benzer prosedürle çıkarır mısınız? Cevabını ben yazayım siz bu ifadeyi yakalamaya çalışın.
 
 
-$m \cdot g +m \cdot \dfrac{dx^2} {d^2t}$
+$$m\,g + m\,\frac{\mathrm{d}^2 x}{\mathrm{d}t^2} = 0 \quad \text{(serbest düşen kütle; yukarı pozitif alınırsa)}$$
 

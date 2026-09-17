@@ -19,7 +19,7 @@ from sympy.abc import *
 sympy kütüphanesindeki tüm fonksiyonları ve kullanabileceğimiz tüm sembol isimlerini çağırdık. Örneğin bir f(x,y,z) fonksiyonunun x, y ve z’ye bağlı olduğunu belirtmek için öncelikle x,y ve z’nin birer sembol olduğunu belirtmemiz gerekir. Bunu from sympy.abc import x,y,z şeklinde de yapabilirdik. Ancak ikinci satırda yazıldığı gibi tanımlanabilecek tüm sembolleri çağırmayı tercih ettik. Şimdi bir ince kirişin elastik eğri denklemini tanımlayalım. Aşağıda yayılı yük altındaki bir kirişin elastik eğri denklemi verilmiştir.
 
 
-$E I \dfrac{d^{4}}{d x^{4}} w{\left(x \right)} =- q$
+$$E I \frac{\mathrm{d}^4 w}{\mathrm{d}x^4} = -q$$
 
 
 Python içerisinde yukarıdaki denklemi tanımlarken eşitliğin sağında bir verinin kalmaması gerekmektedir. -q değerini de denklemin soluna atarak Python içerisinde yazıyoruz.
@@ -33,23 +33,25 @@ Kirişin çökme fonksiyonu w(x)’i analitik olarak elde edebilmek için yukar�
 
 
 $$
-C_{1} + E I \dfrac{d^{3}}{d x^{3}} w{\left(x \right)} + q x=0 \\
-    C_{1} x + C_{2} + E I \dfrac{d^{2}}{d x^{2}} w{\left(x \right)} + \dfrac{q x^{2}}{2}=0\\
-    \dfrac{C_{1} x^{2}}{2} + C_{2} x + C_{3} + E I \dfrac{d}{d x} w{\left(x \right)} + \dfrac{q x^{3}}{6} =0\\
-    \dfrac{C_{1} x^{3}}{6} + \dfrac{C_{2} x^{2}}{2} + C_{3} x + C_{4} + E I w{\left(x \right)} + \dfrac{q x^{4}}{24}=0
+\begin{aligned}
+E I \frac{\mathrm{d}^3 w}{\mathrm{d}x^3} &= -q x + C_{1} \\
+E I \frac{\mathrm{d}^2 w}{\mathrm{d}x^2} &= -\frac{q x^2}{2} + C_{1} x + C_{2} \\
+E I \frac{\mathrm{d} w}{\mathrm{d}x} &= -\frac{q x^3}{6} + \frac{C_{1} x^2}{2} + C_{2} x + C_{3} \\
+E I \, w &= -\frac{q x^4}{24} + \frac{C_{1} x^3}{6} + \frac{C_{2} x^2}{2} + C_{3} x + C_{4}
+\end{aligned}
 $$
 
 
 Yukarıda görülen bilinmeyen katsayıları (C<sub>1</sub> , C<sub>2</sub> , C<sub>3</sub> , C<sub>4</sub> ) elde edebilmek için dört adet sınır şartına ihtiyaç duyulmaktadır. Örneğin iki ucu basit mesnetli bir kiriş için sınır şartları:
 
 
-$w(0)=0, \quad w(L)=0, \quad \dfrac{d^{2}}{d x^{2}} w{\left(0 \right)}=0, \quad\dfrac{d^{2}}{d x^{2}} w{\left(L \right)}=0$
+$$w(0) = 0, \qquad w(L) = 0, \qquad \left. \frac{\mathrm{d}^2 w}{\mathrm{d}x^2} \right|_{x=0} = 0, \qquad \left. \frac{\mathrm{d}^2 w}{\mathrm{d}x^2} \right|_{x=L} = 0$$
 
 
 Sınır şartlarını kullanarak bilinmeyen katsayılar elde edilir ve yer değiştirme denklemi w(x) elde edilir.
 
 
-$w(x)=\dfrac{q x \left(- L^{3} + 2 L x^{2} - x^{3}\right)}{24 E I}$
+$$w(x) = \frac{q\,x\,\left(x^3 - 2Lx^2 + L^3\right)}{24\,E\,I} \quad \text{(aşağı sarkma yönünde negatif alınır)}$$
 
 
 Bu işlemleri Python içerisinde dsolve komutu ile kolayca yapabilirsiniz.
@@ -68,10 +70,10 @@ Yukarıda W ile tanımladığımız denklem iki ucu basit mesnetli yayılı yük
 
 $$
 \begin{aligned}
-q &= 0.1 \ \mathrm{\frac{N}{m}} \\
+q &= 0{,}1 \ \mathrm{N/m} \\
 L &= 100 \ \mathrm{mm} \\
 h = b &= 1 \ \mathrm{mm} \\
-E &= 210000 \ \mathrm{MPa}
+E &= 210\,000 \ \mathrm{MPa}
 \end{aligned}
 $$
 
