@@ -12,7 +12,7 @@ durum: tam
 30 kişilik sınıftan bir başkan bir başkan yardımcısı seçilecektir. Kaç farklı şekilde seçilebilir? Olasılık hesapları yaparken kaçınılmaz olarak permütasyon ve kombinasyon hesapları yapılır. Unuttuysanız şöyle hatırlatayım, sıralama önemliyse permutasyon değilse kombinasyon kullanılıyordu. Permütasyonun matematiksel ifadesi şu şekilde:
 
 
-$P(n,r)=\frac {n!}{(n-r)!}$
+$P(n,r)=\dfrac {n!}{(n-r)!}$
 
 
 Bu işlemi gerçekleştirebilmek için faktöriyel hesabını önce kodlamamız gerekecek. Daha önce bir çok örnek yaptık. Şurada o kodları bulabilirsiniz.
@@ -33,5 +33,5 @@ def permutasyon(n, r):
 **Sıra Sizde:** 5 kişinin başvurduğu bir işe sadece 2 kişi alınacaktır. Bu 2 kişi kaç farklı şekilde seçilebilir? İşte buraya kombinasyonun matematiksel ifadesini yazıyorum. Lütfen bunun kodunu da siz yazar mısınız?
 
 
-$C(n,r)=\frac {n!}{(n-r)!\cdot  r!}$
+$C(n,r)=\dfrac {n!}{(n-r)!\cdot  r!}$
 

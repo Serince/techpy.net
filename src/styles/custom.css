@@ -54,6 +54,9 @@
 
 /* KaTeX formülleri */
 @import 'katex/dist/katex.min.css';
-.katex-display { overflow-x: auto; overflow-y: hidden; padding: 0.6rem 0.8rem; background: var(--sl-color-gray-6); border-left: 4px solid #ffb034; border-radius: 0 0.6rem 0.6rem 0; margin: 1rem 0; }
+.katex-display { overflow-x: auto; overflow-y: visible; padding: 0.9rem 1rem 1.1rem; background: var(--sl-color-gray-6); border-left: 4px solid #ffb034; border-radius: 0 0.6rem 0.6rem 0; margin: 1.1rem 0; line-height: 1.9; }
 :root[data-theme='light'] .katex-display { background: #e8f1fa; }
-.katex { font-size: 1.06em; }
+.katex-display .katex { font-size: 1.18em; }
+.katex-display .katex .mfrac { margin: 0.25em 0; }
+.katex { font-size: 1.1em; }
+.katex .mfrac { font-size: 1.02em; }

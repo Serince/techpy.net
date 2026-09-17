@@ -41,7 +41,7 @@ Eq(diff(L,x)-diff(L,diff(x,t),t),0)
 İlk başta *Eq* fonksiyonu eşitlik tanımlamak için yazıldı. Denklemde göreceğiniz üzere eşitliğin sağ tarafı 0. Sonrasında her bir ifade aynı şekilde eklendi. Böylece aşağıdaki hareket denklemini elde ettik.
 
 
-$- k x{\left(t \right)} - m \frac{d^{2}}{d t^{2}} x{\left(t \right)} + f{\left(t \right)} = 0$
+$- k x{\left(t \right)} - m \dfrac{d^{2}}{d t^{2}} x{\left(t \right)} + f{\left(t \right)} = 0$
 
 
 Yer değiştirmenin ikinci türevi ivmedir. Yukarıdaki ifadeyi daha basit yazarsak:
@@ -61,5 +61,5 @@ Burada ifadenin sonunda \[0\] yazmamızın sebebi, bu fonksiyon çok boyutlu ve 
 **Sıra sizde:** Daha basit bir ifadeyi, sadece bir kütlenin hareket denklemini yukarıdakilere benzer prosedürle çıkarır mısınız? Cevabını ben yazayım siz bu ifadeyi yakalamaya çalışın.
 
 
-$m \cdot g +m \cdot \frac{dx^2} {d^2t}$
+$m \cdot g +m \cdot \dfrac{dx^2} {d^2t}$
 

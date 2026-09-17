@@ -12,7 +12,7 @@ durum: tam
 Fonksiyonel programlama kod satırları biraz uzadıkça oldukça önemli hale geliyor. Bol uygulama yaparak mantığını hazmetmek oldukça önemli. Şimdi sıcaklık birimlerini dönüştüren bir fonksiyon yazalım. Önce bir hatırlarsak neydi bu sıcaklık birimlerinin ilişkileri;
 
 
-$\frac {C}{100}=\frac {F-32}{180}=\frac {K-273.15}{100}$
+$\dfrac {C}{100}=\dfrac {F-32}{180}=\dfrac {K-273.15}{100}$
 
 
 Programı yazmadan önce programın tasarımını yaparsak:
