@@ -19,3 +19,4 @@ Mühendislikte çoğu hesap, analiz ve simülasyon artık Python ile yapılıyor
 techpy.net bir dönem hosting sorunuyla kapandı; site, arşiv kayıtları ve Telegram duyurularından tek tek kurtarılıp logonun renkleriyle (lacivert, teknoloji mavisi, logo sarısı) yeniden kuruldu. Eski adresler yeni sayfalara yönlenir, hiçbir ders kaybolmaz.
 
 Duyurular ve yeni dersler: [t.me/techpy_net](https://t.me/techpy_net)
+x
