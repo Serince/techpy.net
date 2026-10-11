@@ -1,14 +1,35 @@
 ---
 import kurslar from '../data/kurslar.json';
-// Öğrenme yolu sırası: temeller -> sayısal -> istatistik -> sembolik -> görüntü
+// Öğrenme yolu sırası + slug'dan deterministik renk (Opus önerisi: inline SVG, sıfır istek)
 const sira: Record<string, number> = { temeller: 1, 'sayisal-yontem': 2, istatistik: 3, 'sembolik-programlama': 4, 'goruntu-isleme': 5 };
+const ikon: Record<string, string> = { temeller: '🐍', 'sayisal-yontem': '📐', istatistik: '📊', 'sembolik-programlama': 'Σ', 'goruntu-isleme': '👁' };
 const liste = [...kurslar].sort((a: any, b: any) => (sira[a.slug] ?? 9) - (sira[b.slug] ?? 9));
+function renk(slug: string): [number, number] {
+  let h = 0;
+  for (const c of slug) h = (h + c.charCodeAt(0)) % 360;
+  return [h, (h + 50) % 360];
+}
 ---
 <div class="kurs-grid not-content">
-  {liste.map((k: any) => (
+  {liste.map((k: any) => {
+    const [h1, h2] = renk(k.slug);
+    return (
     <a class="kurs-kart" href={k.href}>
-      <img src={k.kapak} alt={k.baslik} loading="lazy" />
+      <span class="kart-gorsel" aria-hidden="true">
+        <svg viewBox="0 0 400 200" preserveAspectRatio="xMidYMid slice">
+          <defs><linearGradient id={`g-${k.slug}`} x1="0" y1="0" x2="1" y2="1">
+            <stop offset="0" stop-color={`hsl(${h1} 65% 42%)`} />
+            <stop offset="1" stop-color={`hsl(${h2} 70% 26%)`} />
+          </linearGradient></defs>
+          <rect width="400" height="200" fill={`url(#g-${k.slug})`} />
+          <circle cx="340" cy="40" r="90" fill="#fff" opacity=".08" />
+          <circle cx="60" cy="190" r="70" fill="#fff" opacity=".06" />
+          <circle cx="200" cy="100" r="130" fill="none" stroke="#fff" stroke-opacity=".07" stroke-width="2" />
+        </svg>
+        <span class="kart-ikon">{ikon[k.slug] ?? '📚'}</span>
+      </span>
       <div class="kb"><small><span class="yol">{sira[k.slug]}. adım</span> • {k.seviye} • {k.dersSayisi} ders</small><br /><b>{k.baslik}</b><p>{k.aciklama}</p></div>
     </a>
-  ))}
+    );
+  })}
 </div>
