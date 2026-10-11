@@ -2,20 +2,23 @@ import { defineConfig } from 'astro/config';
 import starlight from '@astrojs/starlight';
 import remarkMath from 'remark-math';
 import rehypeMathjax from 'rehype-mathjax';
+import sitemap from '@astrojs/sitemap';
 
 export default defineConfig({
   site: 'https://techpy.net',
   markdown: {
     remarkPlugins: [remarkMath],
-    rehypePlugins: [[rehypeMathjax, { chtml: { fontURL: 'https://cdn.jsdelivr.net/npm/mathjax@3/es5/output/chtml/fonts/woff-v2' } }]],
+    rehypePlugins: [rehypeMathjax],
   },
   integrations: [
+    sitemap(),
     starlight({
       title: 'techpy',
       tagline: 'Teknik Python — Fikir uçar, kod kalır!',
       description: 'Mühendislik problemlerini Python ile çözen Türkçe eğitim sitesi.',
       logo: { src: './src/assets/logo.png', alt: 'techpy — Teknik Python' },
       favicon: '/favicon.png',
+      head: [{ tag: 'meta', attrs: { property: 'og:image', content: 'https://techpy.net/logo.png' } }, { tag: 'meta', attrs: { name: 'twitter:card', content: 'summary_large_image' } }],
       defaultLocale: 'root',
       locales: { root: { label: 'Türkçe', lang: 'tr' } },
       social: [

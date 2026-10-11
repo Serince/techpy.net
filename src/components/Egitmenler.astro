@@ -1,13 +1,14 @@
 ---
 import ekip from '../data/ekip.json';
-const havuz = [...ekip].sort(() => 0.5 - Math.random()).slice(0, 8);
+// Deterministik vitrin: dersi en çok olan 4 eğitmen (her derlemede aynı)
+const havuz = [...ekip].sort((a: any, b: any) => (b.dersSayisi || 0) - (a.dersSayisi || 0) || a.ad.localeCompare(b.ad, 'tr')).slice(0, 4);
 ---
 <div class="egitmen-grid not-content">
   {havuz.map((e: any) => (
     <div class="egitmen">
       {e.foto && <img src={e.foto} alt={e.ad} loading="lazy" />}
       <b>{e.ad}</b>
-      <small>{e.dersSayisi ? `${e.dersSayisi} ders` : e.rol}</small>
+      <small>{e.rol}</small>
     </div>
   ))}
 </div>

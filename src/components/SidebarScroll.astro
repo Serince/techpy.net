@@ -5,9 +5,11 @@ import Default from '@astrojs/starlight/components/Head.astro';
 <script>
 (function () {
   function scrollActive() {
-    var active = document.querySelector('nav[aria-label="Docs"] a[aria-current="page"], aside a[aria-current="page"], .sidebar a[aria-current="page"]');
-    if (!active) return false;
-    active.scrollIntoView({ behavior: 'smooth', block: 'center' });
+    var pane = document.querySelector('.sidebar-pane');
+    var cur = pane ? pane.querySelector('[aria-current="page"]') : document.querySelector('nav[aria-label="Docs"] a[aria-current="page"], aside a[aria-current="page"]');
+    if (!pane || !cur) return false;
+    var top = cur.offsetTop - pane.clientHeight / 2;
+    if (Math.abs(pane.scrollTop - top) > pane.clientHeight / 2) pane.scrollTop = top;
     return true;
   }
   if (document.readyState === 'loading') {

@@ -1,0 +1,20 @@
+---
+import { getCollection } from 'astro:content';
+import kurslar from '../data/kurslar.json';
+import ekip from '../data/ekip.json';
+const dersler = await getCollection('docs');
+const haric = new Set(['index', 'buradan-basla', 'katkida-bulun', 'hakkimizda']);
+const dersSayisi = dersler.filter((d: any) => { const id = String((d as any).id ?? (d as any).slug ?? ''); const son = id.split('/').pop() ?? ''; return !haric.has(son); }).length;
+let videoSayisi = 0;
+for (const d of dersler) {
+  const y = (d.data as any)?.youtube;
+  if (Array.isArray(y)) videoSayisi += y.length; else if (y) videoSayisi += 1;
+}
+---
+<div class="istatistik not-content">
+  <span><b>{dersSayisi}</b> ders</span>
+  <span><b>{kurslar.length}</b> kurs</span>
+  <span><b>{videoSayisi}</b> video</span>
+  <span><b>{ekip.length}</b> eğitmen</span>
+  <span><b>%100</b> ücretsiz</span>
+</div>

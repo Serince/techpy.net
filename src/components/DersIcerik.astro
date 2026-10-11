@@ -17,7 +17,7 @@ const yazarLink = data?.yazarKanal ? `<a href="${data.yazarKanal}" target="_blan
       {data?.yazilim && <span>🐍 {data.yazilim}</span>}
       {data?.tarih && <span>📅 {data.tarih}</span>}
     </div>
-    {vids.map((id) => <YouTube id={id} />)}
+    {vids.map((id) => <YouTube id={id} title={data?.title ?? 'techpy anlatım videosu'} />)}
     {data?.dogrulama && <blockquote>⚠️ Bu dersteki video eşleşmesi otomatik bulundu; doğrulama bekliyor.</blockquote>}
   </div>
 )}
