@@ -10,7 +10,7 @@
   },
   "dependencies": {
     "@astrojs/sitemap": "^3.7.4",
-    "@astrojs/starlight": "^0.35.0",
+    "@astrojs/starlight": "^0.43.1",
     "astro": "^5.13.0",
     "rehype-mathjax": "^7.1.0",
     "remark-math": "^6.0.0",
